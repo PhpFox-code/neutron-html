@@ -2,6 +2,7 @@
   "name": "codelego/phpfox-assetmanager",
   "description": "PhpFox Asset Manager Component",
   "type": "library",
+  "license": "MIT",
   "authors": [
     {
       "name": "Nam Nguyen",
