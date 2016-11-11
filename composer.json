@@ -1,6 +1,6 @@
 {
   "name": "codelego/phpfox-asset-manager",
-  "description": "PhpFox Asset Manager Component",
+  "description": "Asset (javascript, stylesheet, Meta, ...) manager library for phpfox framework",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -15,5 +15,11 @@
       "Phpfox\\AssetManager\\": "src/"
     }
   },
-  "require": {}
+  "autoload-dev": {
+    "psr-4": {
+      "Phpfox\\AssetManager\\": "test/"
+    }
+  },
+  "require": {},
+  "require-dev": {}
 }
