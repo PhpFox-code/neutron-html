@@ -5,7 +5,7 @@ namespace Phpfox\ViewAsset;
 /**
  * Class ExternalScript
  *
- * @package Phpfox\AssetManager
+ * @package Phpfox\ViewAsset
  */
 class ExternalScript
 {

@@ -5,7 +5,7 @@ namespace Phpfox\ViewAsset;
 /**
  * Class HeadLink
  *
- * @package Phpfox\AssetManager
+ * @package Phpfox\ViewAsset
  */
 class HeadLink
 {

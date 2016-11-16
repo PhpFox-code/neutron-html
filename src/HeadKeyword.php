@@ -5,7 +5,7 @@ namespace Phpfox\ViewAsset;
 /**
  * Class HeadKeyword
  *
- * @package Phpfox\AssetManager
+ * @package Phpfox\ViewAsset
  */
 class HeadKeyword
 {

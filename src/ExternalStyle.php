@@ -5,7 +5,7 @@ namespace Phpfox\ViewAsset;
 /**
  * Class ExternalStyle
  *
- * @package Phpfox\AssetManager
+ * @package Phpfox\ViewAsset
  */
 class ExternalStyle
 {

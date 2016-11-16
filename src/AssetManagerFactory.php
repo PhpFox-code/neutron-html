@@ -5,7 +5,7 @@ namespace Phpfox\ViewAsset;
 /**
  * Class AssetManagerFactory
  *
- * @package Phpfox\AssetManager
+ * @package Phpfox\ViewAsset
  */
 class AssetManagerFactory
 {

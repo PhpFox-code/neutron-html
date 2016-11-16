@@ -5,7 +5,7 @@ namespace Phpfox\ViewAsset;
 /**
  * Class HeadMeta
  *
- * @package Phpfox\AssetManager
+ * @package Phpfox\ViewAsset
  */
 class HeadMeta
 {

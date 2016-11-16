@@ -5,7 +5,7 @@ namespace Phpfox\ViewAsset;
 /**
  * Class HeadOpenGraph
  *
- * @package Phpfox\AssetManager
+ * @package Phpfox\ViewAsset
  */
 class HeadOpenGraph
 {

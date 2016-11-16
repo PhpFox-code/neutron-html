@@ -5,7 +5,7 @@ namespace Phpfox\ViewAsset;
 /**
  * Class InlineScript
  *
- * @package Phpfox\AssetManager
+ * @package Phpfox\ViewAsset
  */
 class InlineScript
 {

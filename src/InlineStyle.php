@@ -5,7 +5,7 @@ namespace Phpfox\ViewAsset;
 /**
  * Class InlineStyle
  *
- * @package Phpfox\AssetManager
+ * @package Phpfox\ViewAsset
  */
 class InlineStyle
 {

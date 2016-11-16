@@ -7,7 +7,7 @@ namespace Phpfox\ViewAsset;
  *
  * Control content of &gt;title&lt; tag.
  *
- * @package Phpfox\AssetManager
+ * @package Phpfox\ViewAsset
  */
 class HeadTitle
 {

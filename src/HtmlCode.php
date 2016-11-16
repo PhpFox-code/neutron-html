@@ -6,7 +6,7 @@ namespace Phpfox\ViewAsset;
 /**
  * Class HtmlCode
  *
- * @package Phpfox\AssetManager
+ * @package Phpfox\ViewAsset
  */
 class HtmlCode
 {
