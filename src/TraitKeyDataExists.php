@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpfox\AssetManager;
+namespace Phpfox\ViewAsset;
 
 
 Trait TraitKeyDataExists
