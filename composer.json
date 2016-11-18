@@ -19,7 +19,5 @@
     "psr-4": {
       "Phpfox\\ViewAsset\\": "test/"
     }
-  },
-  "require": {},
-  "require-dev": {}
+  }
 }

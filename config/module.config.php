@@ -3,7 +3,7 @@
 namespace Phpfox\ViewAsset;
 
 return [
-    'factories' => [
-        'assetManager' => AssetManagerFactory::class,
+    'services' => [
+        'assets' => AssetManager::class,
     ],
 ];
