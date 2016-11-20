@@ -57,4 +57,8 @@ class ExternalScript
         return $this;
     }
 
+    public function getHtml()
+    {
+        return '';
+    }
 }

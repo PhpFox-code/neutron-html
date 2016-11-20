@@ -52,7 +52,7 @@ class InlineStyle
      */
     public function getHtml()
     {
-        return _sprintf('<$1 type="$2">$3</$1>', [
+        return _sprintf('<{0} type="{1}">{2}</{0}>', [
             'script',
             'text/css',
             implode(';', $this->data),

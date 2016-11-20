@@ -84,15 +84,15 @@ final class AssetManager
      */
     public function __construct()
     {
-        $this->inittialize();
+        $this->initialize();
     }
 
     /**
      * @return string
      */
-    public function getHeader()
+    public function getHeaderHtml()
     {
-        \app()->emit('onAssetManagerGetHeader', $this);
+//        \app()->emit('onAssetManagerGetHeader', $this);
 
         return implode(PHP_EOL, array_map(function ($v) {
             return null == $v ? '' : $v->getHtml();
@@ -112,9 +112,9 @@ final class AssetManager
     /**
      * @return string
      */
-    public function getFooter()
+    public function getFooterHtml()
     {
-        \app()->emit('onAssetManagerGetFooter', $this);
+//        \app()->emit('onAssetManagerGetFooter', $this);
 
         $this->shutdownInlineStyle = new InlineStyle();
         $this->shutdownExternalScript = new ExternalScript();
@@ -135,7 +135,7 @@ final class AssetManager
      */
     public function getStartHtml()
     {
-        return \app()->setting('platform_core', 'head_script');
+//        return \app()->setting('platform_core', 'head_script');
     }
 
     /**
@@ -143,7 +143,7 @@ final class AssetManager
      */
     public function getShutdownHtml()
     {
-        return \app()->setting('platform_core', 'head_script');
+//        return \app()->setting('platform_core', 'head_script');
     }
 
     /**

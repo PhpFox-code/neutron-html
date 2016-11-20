@@ -59,4 +59,8 @@ class ExternalStyle
         return $this;
     }
 
+    public function getHtml()
+    {
+        return '';
+    }
 }
