@@ -4,6 +4,8 @@ namespace Phpfox\ViewAsset;
 
 return [
     'services' => [
-        'assets' => AssetManager::class,
+        'map' => [
+            'assets' => [null, AssetManager::class,],
+        ],
     ],
 ];
