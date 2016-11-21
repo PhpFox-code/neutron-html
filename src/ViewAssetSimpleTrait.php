@@ -3,7 +3,7 @@
 namespace Phpfox\ViewAsset;
 
 
-Trait TraitKeyDataExists
+Trait ViewAssetSimpleTrait
 {
     /**
      * @var int

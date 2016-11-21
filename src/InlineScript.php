@@ -9,7 +9,7 @@ namespace Phpfox\ViewAsset;
  */
 class InlineScript
 {
-    use TraitKeyDataExists;
+    use ViewAssetSimpleTrait;
 
 
     /**

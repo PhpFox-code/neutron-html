@@ -9,7 +9,7 @@ namespace Phpfox\ViewAsset;
  */
 class InlineStyle
 {
-    use TraitKeyDataExists;
+    use ViewAssetSimpleTrait;
 
     /**
      * Append inline scripts to header

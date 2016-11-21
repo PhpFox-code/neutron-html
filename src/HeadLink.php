@@ -9,7 +9,7 @@ namespace Phpfox\ViewAsset;
  */
 class HeadLink
 {
-    use TraitKeyDataExists;
+    use ViewAssetSimpleTrait;
 
     /**
      * @param string $key

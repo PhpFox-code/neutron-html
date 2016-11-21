@@ -22,6 +22,8 @@ class AssetContainer
         foreach ($this->map as $k => $v) {
             $this->get($k);
         }
+
+        events()->trigger('onAssertContainerInit', $this);
     }
 
     /**
@@ -82,7 +84,7 @@ class AssetContainer
 
         $class = array_shift($ref);
 
-        return  new $class();
+        return new $class();
 
     }
 

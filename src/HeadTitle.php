@@ -36,6 +36,16 @@ class HeadTitle
         return $this;
     }
 
+    public function set($data)
+    {
+        if (is_string($data)) {
+            $this->data = [$data];
+        } else {
+            $this->data [] = $data;
+        }
+        return $this;
+    }
+
     /**
      * @param string $data
      *
@@ -45,6 +55,14 @@ class HeadTitle
     {
         array_unshift($this->data, $data);
         return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isEmpty()
+    {
+        return empty($this->data);
     }
 
     /**

@@ -10,7 +10,7 @@ namespace Phpfox\ViewAsset;
 class HeadMeta
 {
 
-    use TraitKeyDataExists;
+    use ViewAssetSimpleTrait;
 
     /**
      * @param string $name
