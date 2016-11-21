@@ -20,7 +20,7 @@ class HeadTitle
     /**
      * @var string
      */
-    protected $separator = '-';
+    protected $separator = ' &raquo; ';
 
     /**
      * Append a string to head title.
