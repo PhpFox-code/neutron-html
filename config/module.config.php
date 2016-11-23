@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpfox\ViewAsset;
+namespace Phpfox\Html;
 
 return [
     'html_header' => [

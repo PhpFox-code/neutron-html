@@ -1,5 +1,5 @@
 {
-  "name": "codelego/phpfox-view-asset",
+  "name": "codelego/phpfox-html",
   "description": "Asset (javascript, stylesheet, Meta, ...) manager library for phpfox framework",
   "type": "library",
   "license": "MIT",
