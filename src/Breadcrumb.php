@@ -3,7 +3,7 @@
 namespace Phpfox\Html;
 
 
-class Breadcrumb
+class Breadcrumb implements HtmlElementInterface
 {
     /**
      * @var array
@@ -20,6 +20,11 @@ class Breadcrumb
     {
         $this->elements[] = $item;
         return $this;
+    }
+
+    public function getHtml()
+    {
+        return '';
     }
 
     public function clear()

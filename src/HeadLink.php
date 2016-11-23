@@ -5,11 +5,11 @@ namespace Phpfox\Html;
 /**
  * Class HeadLink
  *
- * @package Phpfox\ViewAsset
+ * @package Phpfox\Html
  */
-class HeadLink
+class HeadLink implements HtmlElementInterface
 {
-    use ViewAssetSimpleTrait;
+    use HtmlSimpleTrait;
 
     /**
      * @param string $key
@@ -18,7 +18,7 @@ class HeadLink
      *
      * @return $this
      */
-    public function append($key, $href, $props = [])
+    public function add($key, $href, $props = [])
     {
         if ($this->ensureKey($href)) {
             return $this;
@@ -29,27 +29,6 @@ class HeadLink
 
         return $this;
     }
-
-    /**
-     * @param string $key
-     * @param string $href
-     * @param array  $props
-     *
-     * @return $this
-     */
-    public function prepend($key, $href, $props = [])
-    {
-        if ($this->ensureKey($href)) {
-            return $this;
-        }
-
-        $props['href'] = $props;
-
-        $this->_prepend($key, $props);
-
-        return $this;
-    }
-
 
     /**
      * @return string

@@ -5,12 +5,12 @@ namespace Phpfox\Html;
 /**
  * Class HeadMeta
  *
- * @package Phpfox\ViewAsset
+ * @package Phpfox\Html
  */
-class HeadMeta
+class HeadMeta implements HtmlElementInterface
 {
 
-    use ViewAssetSimpleTrait;
+    use HtmlSimpleTrait;
 
     /**
      * @param string $name
@@ -18,7 +18,7 @@ class HeadMeta
      *
      * @return $this
      */
-    public function append($name, $props = [])
+    public function add($name, $props = [])
     {
         $this->data[$name] = $props;
         return $this;

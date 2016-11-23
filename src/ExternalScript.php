@@ -5,11 +5,11 @@ namespace Phpfox\Html;
 /**
  * Class ExternalScript
  *
- * @package Phpfox\ViewAsset
+ * @package Phpfox\Html
  */
-class ExternalScript
+class ExternalScript implements HtmlElementInterface
 {
-    use ViewAssetSimpleTrait;
+    use HtmlSimpleTrait;
 
     /**
      * @param string $key

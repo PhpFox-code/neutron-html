@@ -5,9 +5,9 @@ namespace Phpfox\Html;
 /**
  * Class HeadOpenGraph
  *
- * @package Phpfox\ViewAsset
+ * @package Phpfox\Html
  */
-class HeadOpenGraph
+class HeadOpenGraph implements HtmlElementInterface
 {
     /**
      * @var array

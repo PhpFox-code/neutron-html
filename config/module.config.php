@@ -3,39 +3,35 @@
 namespace Phpfox\Html;
 
 return [
-    'html_header' => [
-        'title'          => [null, HeadTitle::class],
-        'keywords'       => [null, HeadKeyword::class],
-        'meta'           => [null, HeadMeta::class],
-        'open_graph'     => [null, HeadOpenGraph::class],
-        'links'          => [null, HeadLink::class],
-        'styles'         => [null, ExternalStyle::class],
-        'inline_styles'  => [null, InlineStyle::class],
-        'scripts'        => [null, ExternalScript::class],
-        'inline_scripts' => [null, InlineScript::class],
-        'html_code'      => [null, HtmlCode::class],
+    'html.header' => [
+        'html.header.title'         => [null, HeadTitle::class],
+        'html.header.keyword'       => [null, HeadKeyword::class],
+        'html.header.meta'          => [null, HeadMeta::class],
+        'html.header.open_graph'    => [null, HeadOpenGraph::class],
+        'html.header.link'          => [null, HeadLink::class],
+        'html.header.style'         => [null, ExternalStyle::class],
+        'html.header.inline_style'  => [null, InlineStyle::class],
+        'html.header.script'        => [null, ExternalScript::class],
+        'html.header.inline_script' => [null, InlineScript::class],
+        'html.header.static_html'   => [null, StaticHtml::class],
     ],
-    'html_footer' => [
-        'styles'         => [null, ExternalStyle::class],
-        'inline_styles'  => [null, InlineStyle::class],
-        'scripts'        => [null, ExternalScript::class],
+    'html.footer' => [
+        'script'         => [null, ExternalScript::class],
         'inline_scripts' => [null, InlineScript::class],
-        'html_code'      => [null, HtmlCode::class],
+        'static_html'    => [null, StaticHtml::class],
     ],
     'services'    => [
         'breadcrumb'                => [
             null,
             Breadcrumb::class,
         ],
-        'html_header'               => [
-            AssetContainerFactory::class,
-            AssetContainer::class,
-            'html_header',
+        'html.header'               => [
+            null,
+            HtmlHeader::class,
         ],
-        'html_footer'               => [
-            AssetContainerFactory::class,
-            AssetContainer::class,
-            'html_footer',
+        'html.footer'               => [
+            null,
+            HtmlFooter::class,
         ],
         'head.title'                => [
             null,
@@ -55,11 +51,11 @@ return [
         ],
         'html_code.start'           => [
             null,
-            HtmlCode::class,
+            StaticHtml::class,
         ],
         'html_code.shutdown'        => [
             null,
-            HtmlCode::class,
+            StaticHtml::class,
         ],
         'external_scripts.start'    => [
             null,

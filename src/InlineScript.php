@@ -5,11 +5,11 @@ namespace Phpfox\Html;
 /**
  * Class InlineScript
  *
- * @package Phpfox\ViewAsset
+ * @package Phpfox\Html
  */
-class InlineScript
+class InlineScript implements HtmlElementInterface
 {
-    use ViewAssetSimpleTrait;
+    use HtmlSimpleTrait;
 
 
     /**

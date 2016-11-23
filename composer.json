@@ -12,12 +12,12 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "Phpfox\\ViewAsset\\": "src/"
+      "Phpfox\\Html\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Phpfox\\ViewAsset\\": "test/"
+      "Phpfox\\Html\\": "test/"
     }
   }
 }

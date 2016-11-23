@@ -2,8 +2,7 @@
 
 namespace Phpfox\Html;
 
-
-class AssetContainer
+class HtmlElementContainer implements HtmlElementInterface
 {
     /**
      * @var array
@@ -15,16 +14,6 @@ class AssetContainer
      */
     protected $map = [];
 
-    public function __construct($key)
-    {
-        $this->map = config($key);
-
-        foreach ($this->map as $k => $v) {
-            $this->get($k);
-        }
-
-        events()->trigger('onAssertContainerInit', $this);
-    }
 
     /**
      * @return string
@@ -85,7 +74,9 @@ class AssetContainer
         $class = array_shift($ref);
 
         return new $class();
-
     }
 
+    public function clear()
+    {
+    }
 }

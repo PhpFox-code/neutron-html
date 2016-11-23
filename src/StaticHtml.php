@@ -4,14 +4,17 @@ namespace Phpfox\Html;
 
 
 /**
- * Class HtmlCode
+ * Class StaticHtml
  *
- * @package Phpfox\ViewAsset
+ * @package Phpfox\Html
  */
-class HtmlCode
+class StaticHtml implements HtmlElementInterface
 {
     /**
      * @var array
+     *
+     *
+     *
      */
     protected $data = [];
 
@@ -20,20 +23,9 @@ class HtmlCode
      *
      * @return $this
      */
-    public function append($html)
+    public function add($html)
     {
-        $this->data[] = $html;
-        return $this;
-    }
-
-    /**
-     * @param string $html
-     *
-     * @return $this
-     */
-    public function prepend($html)
-    {
-        array_unshift($this->data, $html);
+        $this->data[] = (string)$html;
         return $this;
     }
 
@@ -49,14 +41,6 @@ class HtmlCode
     }
 
     /**
-     * @return array
-     */
-    public function getData()
-    {
-        return $this->data;
-    }
-
-    /**
      * getHtml content
      *
      * @return string
@@ -64,6 +48,10 @@ class HtmlCode
     public function getHtml()
     {
         return implode(PHP_EOL, $this->data);
+    }
 
+    public function __toString()
+    {
+        return implode(PHP_EOL, $this->data);
     }
 }

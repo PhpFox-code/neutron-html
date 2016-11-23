@@ -5,9 +5,9 @@ namespace Phpfox\Html;
 /**
  * Class HeadDescription
  *
- * @package Phpfox\ViewAsset
+ * @package Phpfox\Html
  */
-class HeadDescription
+class HeadDescription implements HtmlElementInterface
 {
 
     /**

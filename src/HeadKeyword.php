@@ -5,9 +5,9 @@ namespace Phpfox\Html;
 /**
  * Class HeadKeyword
  *
- * @package Phpfox\ViewAsset
+ * @package Phpfox\Html
  */
-class HeadKeyword
+class HeadKeyword implements HtmlElementInterface
 {
     /**
      * @var array
@@ -15,31 +15,20 @@ class HeadKeyword
     protected $data = [];
 
     /**
-     * @param string $data
+     * @param string|array $data
      *
      * @return $this
      */
-    public function append($data)
+    public function set($data)
     {
-        $this->data[] = $data;
-        return $this;
-    }
-
-    /**
-     * @param string $data
-     *
-     * @return $this
-     */
-    public function prepend($data)
-    {
-        array_unshift($this->data, $data);
+        $this->data[] = is_string($data) ? [$data] : $data;
         return $this;
     }
 
     /**
      * @return array
      */
-    public function getData()
+    public function get()
     {
         return $this->data;
     }
@@ -49,6 +38,7 @@ class HeadKeyword
      */
     public function clear()
     {
+        $this->data = [];
         return $this;
     }
 
@@ -57,7 +47,14 @@ class HeadKeyword
      */
     public function getHtml()
     {
-        return '<meta name="keywords" content="' . htmlentities(implode(',',
-            $this->data)) . '"/>';
+        return '<meta name="keywords" content="' . $this->__toString() . '"/>';
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return htmlentities(implode(',', $this->data));
     }
 }

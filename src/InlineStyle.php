@@ -5,11 +5,11 @@ namespace Phpfox\Html;
 /**
  * Class InlineStyle
  *
- * @package Phpfox\ViewAsset
+ * @package Phpfox\Html
  */
-class InlineStyle
+class InlineStyle implements HtmlElementInterface
 {
-    use ViewAssetSimpleTrait;
+    use HtmlSimpleTrait;
 
     /**
      * Append inline scripts to header

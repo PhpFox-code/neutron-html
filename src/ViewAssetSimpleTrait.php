@@ -3,7 +3,7 @@
 namespace Phpfox\Html;
 
 
-Trait ViewAssetSimpleTrait
+Trait HtmlSimpleTrait
 {
     /**
      * @var int

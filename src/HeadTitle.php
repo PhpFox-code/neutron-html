@@ -7,9 +7,9 @@ namespace Phpfox\Html;
  *
  * Control content of &gt;title&lt; tag.
  *
- * @package Phpfox\ViewAsset
+ * @package Phpfox\Html
  */
-class HeadTitle
+class HeadTitle implements HtmlElementInterface
 {
 
     /**
@@ -23,46 +23,18 @@ class HeadTitle
     protected $separator = ' &raquo; ';
 
     /**
-     * Append a string to head title.
-     *
-     * @param string $data
+     * @param string|array $title
      *
      * @return $this
      */
-    public function append($data)
+    public function set($title)
     {
-        $this->data[] = (string)$data;
-
-        return $this;
-    }
-
-    public function set($data)
-    {
-        if (is_string($data)) {
-            $this->data = [$data];
+        if (is_string($title)) {
+            $this->data = [$title];
         } else {
-            $this->data [] = $data;
+            $this->data [] = $title;
         }
         return $this;
-    }
-
-    /**
-     * @param string $data
-     *
-     * @return $this
-     */
-    public function prepend($data)
-    {
-        array_unshift($this->data, $data);
-        return $this;
-    }
-
-    /**
-     * @return bool
-     */
-    public function isEmpty()
-    {
-        return empty($this->data);
     }
 
     /**
