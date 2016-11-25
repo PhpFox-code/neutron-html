@@ -9,13 +9,7 @@ namespace Phpfox\Html;
  * @package Phpfox\Html
  *
  */
-class HtmlFooter
+class HtmlFooter extends HtmlElementContainer
 {
-    public function __construct()
-    {
-        $this->map = config('html.footer');
-        foreach ($this->map as $k => $v) {
-            $this->get($k);
-        }
-    }
+
 }

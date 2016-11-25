@@ -2,7 +2,6 @@
 
 namespace Phpfox\Html;
 
-
 Trait HtmlSimpleTrait
 {
     /**

@@ -4,6 +4,8 @@ namespace Phpfox\Html;
 
 class HtmlFacades
 {
+    public function __construct(){}
+
     /**
      * @param string|array $title
      *
@@ -11,7 +13,7 @@ class HtmlFacades
      */
     public function setTitle($title)
     {
-        service('html.header.title')->set($title);
+        service('html.header')->get('html.header.title')->set($title);
         return $this;
     }
 

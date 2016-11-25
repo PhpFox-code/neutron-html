@@ -4,31 +4,36 @@ Html element library for phpfox framework.
 
 
 HTML Structure
-
 ```php
-{html.directive}
-    {html.header}
-        {html.header.title}
-        {html.header.keyword}
-        {html.header.description}
-        {html.header.meta}
-        {html.header.link}
-        {html.header.open_graph}
-        {html.header.style}
-        {html.header.inline_style}
-        {html.header.script}
-        {html.header.inline_script}
-        {html.header.static_html}
-    {html.body}
-        {}
-        {}
-        {}
+{html}
+    {directive}
+    {header}
+        {title}
+        {keyword}
+        {description}
+        {meta}
+        {link}
+        {open_graph}
+        {style}
+        {inline_style}
+        {script}
+        {inline_script}
+        {static_html}
+    {body}
+    {search_main}
+    {search_nav}
+    {search_form}
+    {breadcrumb}
+    {mainMenu}
+    {subMenu}
+    {category}
         Your Html Content Here  
-    {html.footer}
-        {html.footer.script}
-        {html.footer.inline_scripts}
-        {html.footer.static_html}
-    
+    {footer
+        {script}
+        {inline_scripts}
+        {static_html}
+        
+        
 ```
 Best Practice
 

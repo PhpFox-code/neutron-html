@@ -7,13 +7,23 @@ class HtmlElementContainer implements HtmlElementInterface
     /**
      * @var array
      */
-    protected $elements = [];
+    protected $container = [];
 
     /**
      * @var array
      */
     protected $map = [];
 
+
+    public function __construct($key)
+    {
+        if(is_string($key)){
+            $this->map = config($key);
+            foreach ($this->map as $k => $v) {
+                $this->get($k);
+            }
+        }
+    }
 
     /**
      * @return string
@@ -22,7 +32,7 @@ class HtmlElementContainer implements HtmlElementInterface
     {
         return implode(PHP_EOL, array_map(function ($v) {
             return $v->getHtml();
-        }, $this->elements));
+        }, $this->container));
     }
 
     /**
@@ -33,7 +43,7 @@ class HtmlElementContainer implements HtmlElementInterface
      */
     public function set($id, $value)
     {
-        $this->elements[$id] = $value;
+        $this->container[$id] = $value;
 
         return $this;
     }
@@ -45,8 +55,8 @@ class HtmlElementContainer implements HtmlElementInterface
      */
     public function get($id)
     {
-        return isset($this->elements[$id]) ? $this->elements[$id]
-            : $this->elements[$id] = $this->build($id);
+        return isset($this->container[$id]) ? $this->container[$id]
+            : $this->container[$id] = $this->build($id);
     }
 
     /**
@@ -57,7 +67,7 @@ class HtmlElementContainer implements HtmlElementInterface
     public function build($id)
     {
         if (!isset($this->map[$id])) {
-            throw new \InvalidArgumentException("There are no asset type '{$id}'");
+            throw new \InvalidArgumentException("There are no item '{$id}'.");
         }
 
         $ref = $this->map[$id];
@@ -73,7 +83,11 @@ class HtmlElementContainer implements HtmlElementInterface
 
         $class = array_shift($ref);
 
-        return new $class();
+        if (empty($ref)) {
+            return new $class();
+        }
+
+        return (new \ReflectionClass($class))->newInstanceArgs($ref);
     }
 
     public function clear()
