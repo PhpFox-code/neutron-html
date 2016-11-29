@@ -1,13 +1,13 @@
 <?php
 
-namespace Phpfox\Html;
+namespace Neutron\Html;
 
 /**
  * Class HeadTitle
  *
  * Control content of &gt;title&lt; tag.
  *
- * @package Phpfox\Html
+ * @package Neutron\Html
  */
 class HeadTitle implements HtmlElementInterface
 {

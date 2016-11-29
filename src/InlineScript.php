@@ -1,11 +1,11 @@
 <?php
 
-namespace Phpfox\Html;
+namespace Neutron\Html;
 
 /**
  * Class InlineScript
  *
- * @package Phpfox\Html
+ * @package Neutron\Html
  */
 class InlineScript implements HtmlElementInterface
 {

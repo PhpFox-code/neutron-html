@@ -1,11 +1,11 @@
 <?php
 
-namespace Phpfox\Html;
+namespace Neutron\Html;
 
 /**
  * Class InlineStyle
  *
- * @package Phpfox\Html
+ * @package Neutron\Html
  */
 class InlineStyle implements HtmlElementInterface
 {

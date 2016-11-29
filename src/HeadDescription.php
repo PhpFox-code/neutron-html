@@ -1,11 +1,11 @@
 <?php
 
-namespace Phpfox\Html;
+namespace Neutron\Html;
 
 /**
  * Class HeadDescription
  *
- * @package Phpfox\Html
+ * @package Neutron\Html
  */
 class HeadDescription implements HtmlElementInterface
 {

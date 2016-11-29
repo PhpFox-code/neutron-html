@@ -1,12 +1,12 @@
 <?php
 
-namespace Phpfox\Html;
+namespace Neutron\Html;
 
 /**
  * Class HtmlFooter
  *
  *
- * @package Phpfox\Html
+ * @package Neutron\Html
  *
  */
 class HtmlFooter extends HtmlElementContainer

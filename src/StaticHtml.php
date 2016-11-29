@@ -1,12 +1,12 @@
 <?php
 
-namespace Phpfox\Html;
+namespace Neutron\Html;
 
 
 /**
  * Class StaticHtml
  *
- * @package Phpfox\Html
+ * @package Neutron\Html
  */
 class StaticHtml implements HtmlElementInterface
 {

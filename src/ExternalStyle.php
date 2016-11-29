@@ -1,11 +1,11 @@
 <?php
 
-namespace Phpfox\Html;
+namespace Neutron\Html;
 
 /**
  * Class ExternalStyle
  *
- * @package Phpfox\Html
+ * @package Neutron\Html
  */
 class ExternalStyle implements HtmlElementInterface
 {

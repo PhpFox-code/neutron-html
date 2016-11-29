@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpfox\Html;
+namespace Neutron\Html;
 
 class HtmlFacades
 {

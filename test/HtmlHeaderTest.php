@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpfox\Html;
+namespace Neutron\Html;
 
 
 class HtmlHeaderTest extends \PHPUnit_Framework_TestCase
@@ -10,7 +10,7 @@ class HtmlHeaderTest extends \PHPUnit_Framework_TestCase
     {
         $htmlFacades = service('html');
 
-        $this->assertInstanceOf('Phpfox\Html\HtmlFacades', $htmlFacades);
+        $this->assertInstanceOf('Neutron\Html\HtmlFacades', $htmlFacades);
 
         if ($htmlFacades instanceof HtmlFacades) {
             ;

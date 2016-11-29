@@ -1,11 +1,11 @@
 <?php
 
-namespace Phpfox\Html;
+namespace Neutron\Html;
 
 /**
  * Class HtmlHeader
  *
- * @package Phpfox\Html
+ * @package Neutron\Html
  */
 class HtmlHeader extends HtmlElementContainer
 {

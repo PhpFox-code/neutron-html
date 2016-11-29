@@ -1,11 +1,11 @@
 <?php
 
-namespace Phpfox\Html;
+namespace Neutron\Html;
 
 /**
  * Class HeadMeta
  *
- * @package Phpfox\Html
+ * @package Neutron\Html
  */
 class HeadMeta implements HtmlElementInterface
 {
